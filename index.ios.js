@@ -18,7 +18,7 @@ import MoreInfoTab from './components/MoreInfoTab';
 import Home from './Home';
 
 class MeituanProject extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.state = {
 			selectedTab: 'home',
@@ -33,7 +33,7 @@ class MeituanProject extends Component {
 
 	render() {
 		return (
-		<TabBarIOS>
+			<TabBarIOS>
 				<TabBarIOS.Item
 					title="首页"
 					icon={require('image!icon_tabbar_homepage_selected')}
@@ -51,20 +51,20 @@ class MeituanProject extends Component {
 				</TabBarIOS.Item>
 
 				{/*<TabBarIOS.Item
-					title="上门"
-					icon={require('image!icon_tabbar_onsite')}
-					onPress={()=> this.changeTab('shangmen')}
-					selected={ this.state.selectedTab === 'shangmen'}>
-					<NavigatorIOS
-						style={styles.container}
-						initialRoute={{
-            title: '上门',
-            component: ItemListView,
-            }}
-					/>
-				</TabBarIOS.Item>*/}
+				 title="上门"
+				 icon={require('image!icon_tabbar_onsite')}
+				 onPress={()=> this.changeTab('shangmen')}
+				 selected={ this.state.selectedTab === 'shangmen'}>
+				 <NavigatorIOS
+				 style={styles.container}
+				 initialRoute={{
+				 title: '上门',
+				 component: ItemListView,
+				 }}
+				 />
+				 </TabBarIOS.Item>*/}
 
-		<TabBarIOS.Item
+				<TabBarIOS.Item
 					title="商家"
 					icon={require('image!icon_tabbar_merchant_normal')}
 					onPress={()=> this.changeTab('shangjia')}
